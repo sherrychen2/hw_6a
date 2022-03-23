@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CMU Testing & Vaccination</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/homework_6a/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!--CMU Testing & Vaccination Logo-->
+        <nav>
+            <a href="index.html" class="logo">CMU Testing & Vaccination</a>
+            <a href="https://www.cmu.edu/" class="cmu-link">cmu.edu</a>
+        </nav>
+
+        <!--Search Bar-->
+        <div class="container">
+            <h1>I want to get tested | <a href="vaccination.html"  style="color: rgba(255, 255, 255, 0.5); text-decoration: underline">vaccinated</a></h1>
+                <form>
+                    <div class="product-search">
+
+                        <!--Choose Appointment Location-->
+                        <div class="search-element">
+                            <label class="search-label">Location</label>
+                            <label class="dropdown">
+
+                              <select id="dropDown" onchange="test()">
+                                <option value="default" selected="selected"> Please select location </option>
+                                <option value="one">TCS Hall</option>
+                                <option value="two">Morewood Gardens</option>
+                                <option value="three">East Campus Garage</option>
+                               </select>
+                                
+                              </label>
+                        </div>
+
+                        <!--Choose Appointment Date-->
+                        <div class="search-element">
+                            <label class="search-label">Date</label>
+                            <label class="dropdown">
+
+                              <select id="dropDown2" onchange="test2()">
+                                <option value="default1" selected="selected"> Please select a date </option>
+                                <option value="four" id="wed">Wed, Mar 02</option>
+                                <option value="five" id="thu">Thu, Mar 03</option>
+                                <option value="six" id="fri">Fri, Mar 04</option>
+                                <option value="seven" id="sat">Sat, Mar 05</option>
+                                <option value="eight" id="sun">Sun, Mar 06</option>
+                              </select>
+                                
+                              </label>
+                        </div>
+
+                        <!--Choose Time of Day-->
+                        <div class="search-element">
+                            <label class="search-label">Time</label>
+                            <label class="dropdown"> 
+
+                              <select id="dropDown3" onchange="test3()">
+                                <option value="default2" selected="selected"> Please select a time of day </option>
+                                <option value="nine">Morning</option>
+                                <option value="ten">Afternoon</option>
+                                <option value="eleven">Evening</option>
+
+                            </select>
+                                
+                              </label>
+                        </div>
+                        
+                        <!--Submit Button-->
+                        <a type="submit" class="search-button" href="times.html">Select A Time</a>
+                    </div>
+                    
+                </form>
+
+                <br><br>
+                <!--Display Location-->
+                <div id="wrapperOne"><h2>
+                  TCS Hall
+                  </h2></div>
+                  <div id="wrapperTwo"><h2>
+                  Morewood Gardens
+                  </h2></div>
+                  <div id="wrapperThree"><h2>
+                  East Campus Garage
+                  </h2></div>
+
+                <!--Display Date-->
+                <div id="wrapperFour"><h2>
+                  03/02
+                  </h2></div>
+                  <div id="wrapperFive"><h2>
+                  03/03
+                  </h2></div>
+                  <div id="wrapperSix"><h2>
+                  03/04
+                  </h2></div>
+                  <div id="wrapperSeven"><h2>
+                  03/05
+                  </h2></div>
+                  <div id="wrapperEight"><h2>
+                  03/05
+                  </h2></div>
+
+                  <!--Display Time Of Day-->
+                  <div id="wrapperNine"><h2>
+                    Morning
+                  </h2></div>
+                  <div id="wrapperTen"><h2>
+                    Afternoon
+                  </h2></div>
+                  <div id="wrapperEleven"><h2>
+                    Evening
+                  </h2></div>
+
+        </div>
+      </div> 
+</body>
+<script src="/homework_6a/script.js"></script>
+
+</html>
